@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="
+https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/fontawesome.min.css
+" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The form</title>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center my-4">
+
+        <div class="card" style="width: 90%;">
+            <div class="card-header">
+                <h3> Payment form example </h3>
+            </div>
+            <form class="p-3">
+                <div class="alert alert-danger" role="alert">
+                    <b>Some fields are missing</b>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-5">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="number" class="form-control" id="cardNumber"
+                            placeholder="XXXX XXXX XXXX XXXX" maxlength="16">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="cvcCode" class="form-label">CVC</label>
+                        <input type="password" class="form-control" id="cvcCode"
+                            placeholder="0000" maxlength="4">
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="moneyAmount" class="form-label">Amount</label>
+                        <input type="number" class="form-control" id="moneyAmount"
+                            placeholder="Amount">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="state" class="form-label">State</label>
+                        <select class="form-select" aria-label="Default select example" id="state">
+                            <option selected>Select a State</option>
+                            <option value="1">Ohio</option>
+                            <option value="2">Florida</option>
+                            <option value="3">Texas</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input type="number" class="form-control" id="postalCode">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="msj" class="form-label col">We accept:</label>
+                    <label for="msj" class="form-label col">Message</label>
+                </div>
+                <div class="row">
+                    <div class="mb-3 mx-2 col p-3 text-bg-secondary rounded-3 d-flex justify-content-center"
+                        style="height: 15%;">
+                        <label for="masterCard" class="form-label mx-2">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </label>
+                        <input type="radio" class="form-check-input" name="card" id="masterCard">
+                        <label for="visa" class="form-label mx-2">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </label>
+                        <input type="radio" class="form-check-input" name="card" id="visa">
+                        <label for="dinersClub" class="form-label mx-2">
+                            <i class="fa-brands fa-cc-diners-club"></i>
+                        </label>
+                        <input type="radio" class="form-check-input" name="card" id="dinersClub">
+                        <label for="amex" class="form-label mx-2">
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </label>
+                        <input type="radio" class="form-check-input" name="card" id="amex">
+                    </div>
+                    <div class="col"></div>
+                    <div class="col-6">
+                        <textarea id="msj" class="form-control" style="height: 95%;"></textarea>
+                        <div id="emailHelp" class="form-text">Add any notes here.</div>
+                    </div>
+                </div>
+                <div class="row mt-4 pt-3 border-top">
+                    <div class="col-10"></div>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Pay</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
